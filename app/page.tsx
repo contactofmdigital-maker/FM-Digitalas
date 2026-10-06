@@ -28,8 +28,8 @@ function track(event: string, params: Record<string, string> = {}) {
 
 function whatsapp(model?: string) {
   const message = model
-    ? `Hola Baby's Maken 💗 Me encantó el ${model} y quiero comprarlo. ¿Me ayudan a realizar mi pedido?`
-    : `Hola Baby's Maken 💗 Vi sus vanitys y quiero realizar mi pedido. ¿Me ayudan con la compra?`;
+    ? `Hola Baby's Maken  Me encantó el ${model} y quiero comprarlo. ¿Me ayudan a realizar mi pedido?`
+    : `Hola Baby's Maken  Vi sus vanitys y quiero realizar mi pedido. ¿Me ayudan con la compra?`;
   return `https://wa.me/${WA}?text=${encodeURIComponent(message)}`;
 }
 

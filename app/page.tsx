@@ -76,7 +76,7 @@ export default function Home() {
 
             <div className="heroOffer">
               <div><strong>Precios visibles</strong><span>Elige tu modelo y revisa medidas antes de escribirnos.</span></div>
-              <div><strong>Entrega local</strong><span>Guadalajara · Tonalá · Zapopan</span></div>
+              <div><strong>Entregamos a todo méxico</strong><span> Llegamos a toda la Républica Méxicana</span></div>
             </div>
 
             <div className="heroActions">
@@ -177,7 +177,7 @@ export default function Home() {
           <div><div className="kicker">PREGUNTAS FRECUENTES</div><h2>Lo importante, antes de comprar.</h2><p>Si todavía tienes una duda, escríbenos y te ayudamos directamente.</p><a className="btn btnPrimary" href={whatsapp()} onClick={() => track('click_whatsapp', { location: 'faq' })} target="_blank" rel="noreferrer">💬 Preguntar por WhatsApp</a></div>
           <div className="faqList">
             {[
-              ['¿Dónde realizan entregas?', 'Actualmente puedes consultar disponibilidad para Guadalajara, Tonalá y Zapopan.'],
+              ['¿Dónde realizan entregas?', 'Entregamos en toda la republica Méxicana. '],
               ['¿Puedo consultar medidas antes de comprar?', 'Sí. Puedes consultar las medidas de cada modelo directamente por WhatsApp antes de realizar tu compra.'],
               ['¿El precio mostrado es el precio del modelo?', 'Sí. El precio que aparece en cada tarjeta corresponde al modelo indicado.'],
               ['¿Cómo confirmo disponibilidad?', 'Escríbenos indicando el nombre del vanity que te interesa y te ayudaremos a confirmar disponibilidad y entrega.'],

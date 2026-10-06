@@ -178,8 +178,8 @@ export default function Home() {
           <div className="faqList">
             {[
               ['¿Dónde realizan entregas?', 'Actualmente puedes consultar disponibilidad para Guadalajara, Tonalá y Zapopan.'],
-              ['¿Puedo consultar medidas antes de comprar?', 'Sí. Cada modelo muestra sus medidas y puedes confirmarlas directamente por WhatsApp antes de realizar tu compra.'],
-              ['¿El precio mostrado es el precio del modelo?', 'Sí. La landing está preparada para mostrar el precio fijo de cada modelo una vez confirmado por Baby\'s Maken.'],
+              ['¿Puedo consultar medidas antes de comprar?', 'Sí. Puedes consultar las medidas de cada modelo directamente por WhatsApp antes de realizar tu compra.'],
+              ['¿El precio mostrado es el precio del modelo?', 'Sí. El precio que aparece en cada tarjeta corresponde al modelo indicado.'],
               ['¿Cómo confirmo disponibilidad?', 'Escríbenos indicando el nombre del vanity que te interesa y te ayudaremos a confirmar disponibilidad y entrega.'],
             ].map(([q, a], i) => (
               <div className={`faqItem ${openFaq === i ? 'open' : ''}`} key={q}>

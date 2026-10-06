@@ -76,7 +76,7 @@ export default function Home() {
 
             <div className="heroOffer">
               <div><strong>Precios visibles</strong><span>Elige tu modelo y revisa medidas antes de escribirnos.</span></div>
-              <div><strong>Entregamos a todo méxico</strong><span> Llegamos a toda la Républica Méxicana</span></div>
+              <div><strong>Entregamos a todo méxico</strong><span> 🇲🇽 Envíos a toda la República Mexicana | Entrega local en Guadalajara, Tonalá y Zapopan</span></div>
             </div>
 
             <div className="heroActions">

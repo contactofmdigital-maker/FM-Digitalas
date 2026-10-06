@@ -3,4 +3,4 @@ export const SITE_URL =
 
 export const SITE_NAME = "Baby's Maken";
 export const WHATSAPP_NUMBER =
-  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5210000000000";
+  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "523325753210";

@@ -6,15 +6,15 @@ import { WHATSAPP_NUMBER } from '../lib/site';
 
 // EDIT ONLY THESE VALUES WHEN THE CLIENT CONFIRMS PRICES AND MEASURES.
 const PRODUCTS = [
-  { name: 'Vanity Butterfly Duo', slug: 'butterfly-duo', image: '/images/butterfly-duo.webp', detail: 'Diseño mariposa · 2 cajones', price: '$1,890 MXN', dimensions: 'Agregar medidas' },
-  { name: 'Vanity Mimi', slug: 'mimi', image: '/images/mimi.webp', detail: 'Diseño compacto · 1 cajón', price: '$1,690 MXN', dimensions: 'Agregar medidas' },
-  { name: 'Vanity Princess', slug: 'princess', image: '/images/princess.webp', detail: 'Diseño princesa · 1 cajón', price: '$1,690 MXN', dimensions: 'Agregar medidas' },
-  { name: 'Vanity Coquet', slug: 'coquet', image: '/images/coquet.webp', detail: 'Diseño mariposa · cajón amplio', price: '$1,690 MXN', dimensions: 'Agregar medidas' },
-  { name: 'Vanity Hello', slug: 'hello', image: '/images/hello.webp', detail: 'Tocador + escritorio · silla incluida', price: '$1,690 MXN', dimensions: 'Agregar medidas' },
-  { name: 'Vanity Butterfly', slug: 'butterfly', image: '/images/butterfly.webp', detail: 'Colección mariposa · compartimentos', price: '$1,890 MXN', dimensions: 'Agregar medidas' },
-  { name: 'Tocador Escritorio', slug: 'escritorio', image: '/images/escritorio.webp', detail: 'Diseño escritorio · espacio amplio', price: '$790 MXN', dimensions: 'Agregar medidas' },
-  { name: 'Vanity Encanto', slug: 'encanto', image: '/images/encanto.webp', detail: 'Diseño completo · 4 cajones', price: '$2,390 MXN', dimensions: 'Agregar medidas' },
-  { name: 'Vanity Barbie', slug: 'barbie', image: '/images/barbie.webp', detail: 'Diseño clásico · 4 cajones', price: '$2,690 MXN', dimensions: 'Agregar medidas' },
+  { name: 'Vanity Butterfly Duo', slug: 'butterfly-duo', image: '/images/butterfly-duo.webp', detail: 'Diseño mariposa · 2 cajones', price: '$1,890 MXN', dimensions: '1.30Mt Altura x 60Cm Largo x 30Cm Fondo' },
+  { name: 'Vanity Mimi', slug: 'mimi', image: '/images/mimi.webp', detail: 'Diseño compacto · 1 cajón', price: '$1,690 MXN', dimensions: '1.30Mt Altura x 60Cm Largo x 30Cm Fondo' },
+  { name: 'Vanity Princess', slug: 'princess', image: '/images/princess.webp', detail: 'Diseño princesa · 1 cajón', price: '$1,690 MXN', dimensions: '1.20Mt Altura x 60Cm Largo x 30Cm Fondo' },
+  { name: 'Vanity Coquet', slug: 'coquet', image: '/images/coquet.webp', detail: 'Diseño mariposa · cajón amplio', price: '$1,690 MXN', dimensions: '1.30Mt Altura x 60Cm Largo x 30Cm Fondo' },
+  { name: 'Vanity Hello', slug: 'hello', image: '/images/hello.webp', detail: 'Tocador + 1 Cajón · silla incluida', price: '$1,690 MXN', dimensions: '1.10Mt Altura x 60Cm Largo x 30Cm Fondo' },
+  { name: 'Vanity Butterfly', slug: 'butterfly', image: '/images/butterfly.webp', detail: 'Colección mariposa · compartimentos', price: '$1,890 MXN', dimensions: '1.30Mt Altura x 60Cm Largo x 30Cm Fondo' },
+  { name: 'Tocador Escritorio', slug: 'escritorio', image: '/images/escritorio.webp', detail: 'Diseño escritorio · espacio amplio', price: '$790 MXN', dimensions: '1Mt Altura x 60Cm Largo x 30Cm Fondo' },
+  { name: 'Vanity Encanto', slug: 'encanto', image: '/images/encanto.webp', detail: 'Diseño completo · 5 cajones', price: '$2,390 MXN', dimensions: '1.40Mt Altura x 80Cm Largo x 30Cm Fondo' },
+  { name: 'Vanity Barbie', slug: 'barbie', image: '/images/barbie.webp', detail: 'Diseño clásico · 5 cajones', price: '$2,690 MXN', dimensions: '1.40Mt Altura x 80Cm Largo x 30Cm Fondo' },
 ];
 
 const WA = WHATSAPP_NUMBER;
@@ -28,8 +28,8 @@ function track(event: string, params: Record<string, string> = {}) {
 
 function whatsapp(model?: string) {
   const message = model
-    ? `Hola Baby's Maken 💗 Me interesa el ${model}. ¿Me comparten disponibilidad y detalles?`
-    : `Hola Baby's Maken 💗 Vi sus vanitys y quiero conocer disponibilidad.`;
+    ? `Hola Baby's Maken 💗 Me encantó el ${model} y quiero comprarlo. ¿Me ayudan a realizar mi pedido?`
+    : `Hola Baby's Maken 💗 Vi sus vanitys y quiero realizar mi pedido. ¿Me ayudan con la compra?`;
   return `https://wa.me/${WA}?text=${encodeURIComponent(message)}`;
 }
 
@@ -47,7 +47,7 @@ export default function Home() {
       <div className="topbar">
         <div className="container topbarInner">
           <span>✨ Colección de vanitys infantiles</span>
-          <span>Envíos a Guadalajara · Tonalá · Zapopan</span>
+          <span>Envíos a Todo México </span>
         </div>
       </div>
 
@@ -154,7 +154,7 @@ export default function Home() {
           </div>
           <div className="deliveryCard">
             <span>📍 Zonas de entrega</span>
-            <strong>Guadalajara · Tonalá · Zapopan</strong>
+            <strong> Entregamos a todo México </strong>
             <small>Consulta disponibilidad de entrega para tu ubicación.</small>
             <a className="btn btnPrimary" href={whatsapp()} onClick={() => track('click_whatsapp', { location: 'delivery' })} target="_blank" rel="noreferrer">Consultar entrega</a>
           </div>
@@ -204,7 +204,7 @@ export default function Home() {
       <footer>
         <div className="container footerInner">
           <Image src="/images/logo.webp" alt="Baby's Maken" width={58} height={58} />
-          <div><strong>Baby's Maken</strong><span>Vanitys infantiles · Guadalajara y zona metropolitana</span></div>
+          <div><strong>Baby's Maken</strong><span>Vanitys infantiles · Entregas a todo México </span></div>
           <a href={whatsapp()} onClick={() => track('click_whatsapp', { location: 'footer' })} target="_blank" rel="noreferrer">WhatsApp →</a>
         </div>
       </footer>
